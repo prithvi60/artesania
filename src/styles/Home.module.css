@@ -98,7 +98,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -126,7 +126,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
@@ -179,7 +179,12 @@
   .content {
     padding: 4rem;
   }
-
+  .description p {
+    margin-left: 2em;
+    margin-right: 2em;
+    width: auto !important;
+    border-radius: 20px !important;
+  }
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
@@ -222,7 +227,7 @@
 
   .description p {
     align-items: center;
-    inset: 0 0 auto;
+    /* inset: 0 0 auto; */
     padding: 2rem 1rem 1.4rem;
     border-radius: 0;
     border: none;
@@ -239,7 +244,7 @@
   .description div {
     align-items: flex-end;
     pointer-events: none;
-    inset: auto 0 0;
+    /* inset: auto 0 0; */
     padding: 2rem;
     height: 200px;
     background: linear-gradient(
